@@ -20,7 +20,7 @@ st.write("For help and inspiration, head over to [docs.streamlit.io](https://doc
 if st.button("**Fetch API Data**"):
     data = response.json()
     st.write(data)
-    st.table(data, border=)
+    st.table(data, border=True)
 
     #st.write(pd.DataFrame(data))
 #    st.dataframe(data)
