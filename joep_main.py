@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+
 #import json
 #from bs4 import BeautifulSoup
 
@@ -25,8 +26,8 @@ if st.button("**Fetch API Data**"):
     st.write(data)
     st.table(data, border=True)
 
-    #st.write(pd.DataFrame(data))
-#    st.dataframe(data)
+    # st.write(pd.DataFrame(data))
+    # st.dataframe(data)
     
 # Simple button
 if st.button("Test"):
