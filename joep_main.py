@@ -32,7 +32,7 @@ if st.button("**Fetch API Data**"):
 # Simple button
 if st.button("Test"):
     st.write("Test Button pressed")
-    st.write(st.session_state.keys)
+    #st.write(st.session_state.keys)
 
 
 if st.button("Clear Form"):
