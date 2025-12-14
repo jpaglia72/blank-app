@@ -11,12 +11,10 @@ df = pd.DataFrame({
   'second column': [10, 20, 30, 40]
 })
 
-
-
 3+4
 x = st.slider('Slider')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
-pressed = st.button("click me")
-print("pressed")
+if st.button("click me"):
+    st.write("pressed")
 
