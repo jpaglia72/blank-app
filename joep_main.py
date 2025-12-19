@@ -50,14 +50,14 @@ if st.button("**Fetch API Data**"):
     iss_api = iss_now_api.json()
     st.write(iss_api)
     st.table(iss_api)
-    st.dataframe(iss_api)
+    #st.dataframe(iss_api)
 
 
     #cat api returned
     cat_data = cat_api.json()
     st.write(cat_data)
     st.table(cat_data)
-    st.dataframe(cat_data)
+    #st.dataframe(cat_data)
 
     ##write 
     # st.write(pd.DataFrame(data))
@@ -67,8 +67,10 @@ if st.button("**Fetch API Data**"):
     
 # Simple button
 if st.button("Test"):
-    st.write("Test Button pressed")
-    #st.write(st.session_state.keys)
+   pressed =  st.write("Test Button pressed")
+   st.write(pressed)
+   st.session_state.get(pressed)
+
 
 
 if st.button("Clear Form"):
