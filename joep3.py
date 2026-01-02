@@ -64,8 +64,8 @@ with st.sidebar.form(key='sidebar_form', clear_on_submit=True):
 # @st.cache_resource
 def clear_form_button():
     if clear_main_form:
-        st.cache_data.clear()
-        st.cache_resource.clear()
+        # st.cache_data.clear()
+        # st.cache_resource.clear()
         st.session_state.clear()
 clear_form_button()
 
